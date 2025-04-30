@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto API</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Wink+Sans&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu">
+        <div class="menu-content">
+            <div class="theme-switcher">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span id="theme-label">Tema Claro</span>
+            </div>
+            <button class="menu-btn home-btn" onclick="location.href='index.html'">Home</button>
+            <button class="menu-btn about-btn" onclick="location.href='about.html'">Sobre</button>
+            <button class="menu-btn export-csv-btn">Exportar CSV</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <h1>Cadastro</h1>
+        <div class="form-container">
+            <div class="form-fields">
+                <form action="">
+                    <label for="id">ID</label>
+                    <input type="number" class="id" name="id" id="id" placeholder="Ex: 123" min="1">
+                    
+                    <label for="nome">Nome</label>
+                    <input type="text" class="nome" name="nome" id="nome" placeholder="Ex: João Silva">
+                    
+                    <label for="idade">Idade</label>
+                    <input type="text" class="idade" name="idade" id="idade" placeholder="Ex: 25">
+                    
+                    <label for="email">Email</label>
+                    <input type="text" class="email" name="email" id="email" placeholder="Ex: joao@email.com">
+                    
+                    <label for="senha">Senha</label>
+                    <input type="password" class="senha" name="senha" id="senha" placeholder="Ex: ********">
+                    
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="endereco" name="endereco" id="endereco" placeholder="Ex: Rua A, 123">
+                    
+                    <label for="tel">Telefone</label>
+                    <input type="text" name="tel" id="tel" placeholder="Ex: (11) 98765-4321">
+                </form>
+            </div>
+            <div class="buttons-container">
+                <button id="cadastrar">Cadastrar</button>
+                <button id="atualizar">Atualizar</button>
+                <button class="pesquisar">Pesquisar</button>
+                <button class="deletar">Deletar</button>
+                <button class="limpar">Limpar Campos</button>
+                <button class="generate-table-btn">Gerar Tabela</button>
+            </div>
+        </div>
+    </div>
+    <div class="table-box fade-in">
+        <h1>Usuários 
+            <button class="close-table-btn">Fechar</button>
+        </h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Endereço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão geradas dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por João Pedro, projeto de API REST</p>
+    </footer>
+</body>
+</html>
